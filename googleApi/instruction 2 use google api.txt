@@ -1,0 +1,15 @@
+I got this same error when working on a project to parse recent calendar events from Google Calendar.
+
+Using the standard install with pip did not work for me, here is what I did to get the packages I needed.
+
+Go directly to the source, here is a link for the google-api-python-client, but if you need a different language it should not be too different.
+
+https://github.com/google/google-api-python-client
+
+Click on the green "Clone or Download" button near the top left and save it as a zip file. Move the zip to your project folder and extract it there. Then cut all the files from the folder it creates back into the root of your project folder.
+
+Yes, this does clutter your work space, but many compilers have ways to hide files.
+
+After doing this the standard
+
+from googleapiclient import discovery
